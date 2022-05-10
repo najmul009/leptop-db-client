@@ -1,4 +1,5 @@
 import useItems from '../../Hooks/useItems';
+import CustomLink from '../CoustomLink/CoustomLink';
 import ItemRow from '../ItemRow/ItemRow';
 import './Inventory.css'
 
@@ -25,6 +26,9 @@ const Inventory = () => {
     return (
         <div className='inventory-section container'>
             <h1 className='text-center my-4'>Manage Items DashBord</h1>
+            <div className="text-center my-4">
+            <CustomLink className='uNone login-btn rounded ' to='/additem'><span className='text-shadow'>+ Add new Item</span></CustomLink>
+            </div>
             <div className="data-table">
                 <table className="table">
                     <thead>

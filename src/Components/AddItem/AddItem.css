@@ -1,0 +1,29 @@
+.additem-section{
+    margin-top: 110px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.fruits-container{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #c0fcf4;
+}
+
+.fruits{
+    height: 100vh;
+}
+
+.margin-text{
+    margin-top: 10%;
+}
+
+@media screen  and (max-width: 600px){
+    .margin-text{
+        margin-top: 30%;
+    }
+
+    .fruits{
+        height: 70vh;
+    }
+}

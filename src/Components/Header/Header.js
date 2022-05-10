@@ -38,7 +38,7 @@ const Header = () => {
                             <li className="nav-item">
                                 {
                                     user &&
-                                    <CustomLink className='uNone' to='/addFruits'>AddFruits</CustomLink>
+                                    <CustomLink className='uNone' to='/additem'>AddFruits</CustomLink>
                                 }
                             </li>
                             <li className="nav-item">
