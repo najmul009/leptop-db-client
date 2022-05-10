@@ -11,7 +11,7 @@ const Inventory = () => {
         <div className='inventory-section container'>
             <h1 className='text-center my-4'>Manage Items DashBord</h1>
             <div className="data-table">
-                <table class="table">
+                <table className="table">
                     <thead>
                         <tr>
                             <th scope="col">#</th>

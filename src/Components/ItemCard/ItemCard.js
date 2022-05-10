@@ -7,7 +7,7 @@ const ItemCard = ({ item}) => {
     const { name, price, description, img, _id, quantity, supplier } = item
     const navigate = useNavigate()
     const handleDetails = (id) => {
-        navigate(`/inventory/${_id}`)
+        navigate(`/inventory/${id}`)
     }
     return (
         <div className='col-lg-4'>

@@ -1,9 +1,13 @@
 import React from 'react';
-import CustomLink from '../CoustomLink/CoustomLink';
+import { useNavigate } from 'react-router-dom';
 import './ItemRow.css'
 
 const ItemRow = ({item}) => {
-    const {img,name,quantity,supplier} = item
+    const {img,name,quantity,supplier,_id} = item
+    const navigate = useNavigate()
+    const handleDetails = (id) => {
+        navigate(`/inventory/${id}`)
+    }
     return (
         <tr>
                             <th scope="row">1</th>
@@ -12,13 +16,13 @@ const ItemRow = ({item}) => {
                             <td>{quantity}</td>
                             <td>{supplier}</td>
                             <td>
-                                <CustomLink className='uNone ship-btn rounded' to='/login'>
+                                <button className='uNone ship-btn rounded' >
                                     <span className='text-shadow'>Ship</span>
-                                </CustomLink>
+                                </button>
                                 <div className="mt-3">
-                                <CustomLink className='uNone login-btn rounded' to='/login'>
+                                <button onClick={() => handleDetails(_id)} className='uNone login-btn rounded' >
                                     <span className='text-shadow'>Update</span>
-                                </CustomLink>
+                                </button>
                                 </div>
                             </td>
                             <td className="delete-icon">
