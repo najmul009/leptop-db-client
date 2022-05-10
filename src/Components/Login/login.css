@@ -1,0 +1,53 @@
+.login-img{
+    width: 100%;
+}
+
+.login-con{
+    height: 100vh;
+    margin-top: 70px;
+   
+}
+
+.login-doc{
+    margin-top: 5%;
+   
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.login{
+    width: 400px;
+    height: 480px;
+    border-radius: 10px;
+    background-color: #c0fcf4;
+}
+
+.line{
+    line-height: 10px;
+}
+
+hr{
+    width: 100px;
+}
+
+.link-color{
+    color: #ff4f00 !important;
+    background-color: #c0fcf4;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .login-img{
+        margin-top: 80px;
+    }
+
+    .login-doc{
+        margin-top: 0;
+    }
+}
