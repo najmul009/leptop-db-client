@@ -8,6 +8,7 @@ import Inventory from './Components/Inventory/Inventory';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
 import Login from './Components/Login/Login';
 import MyItem from './Components/MyItem/MyItem';
+import Notmatch from './Components/Notmatch/Notmatch';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import SignUp from './Components/SignUp/SignUp';
 
@@ -32,6 +33,7 @@ function App() {
         <Route path='/myitem' element={<MyItem></MyItem>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<Notmatch></Notmatch>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

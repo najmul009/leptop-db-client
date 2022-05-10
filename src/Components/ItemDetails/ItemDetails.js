@@ -17,10 +17,10 @@ const ItemDetails = () => {
 
     }, [isReload])
 
-    const handleFruitsUpdate = async (e) => {
+    const handleItemUpdate = async (e) => {
         e.preventDefault()
         const quantity = parseInt(e.target.quantity.value) + parseInt(Item.quantity)
-        const updateFruits = { quantity }
+        const updateItem = { quantity }
 
         const url = `http://localhost:5000/inventory/${inventoryId}`;
         await fetch(url, {
@@ -28,7 +28,7 @@ const ItemDetails = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(updateFruits)
+            body: JSON.stringify(updateItem)
         })
             .then(res => res.json())
             .then(result => {
@@ -58,7 +58,7 @@ const ItemDetails = () => {
 
                         <div className='col-lg-4 update mt-3'>
                             <h3 className='text-success'>Update Stock</h3>
-                            <form onSubmit={handleFruitsUpdate} className='d-flex flex-column'>
+                            <form onSubmit={handleItemUpdate} className='d-flex flex-column'>
                                 <label className='fw-bold' htmlFor="quantity">Stock*</label>
                                 <input type="number" name="quantity" id="" required /> <br />
                                 <input className='border-0 btn-dark py-2    ' type="submit" value="Update" />
