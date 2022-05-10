@@ -41,7 +41,7 @@ li{
     background-color: #059e05;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     li{
         text-align: center;
     }

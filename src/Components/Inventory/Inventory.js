@@ -29,7 +29,7 @@ const Inventory = () => {
             <div className="text-center my-4">
             <CustomLink className='uNone login-btn rounded ' to='/additem'><span className='text-shadow'>+ Add new Item</span></CustomLink>
             </div>
-            <div className="data-table">
+            <div className="data-table table-responsive">
                 <table className="table">
                     <thead>
                         <tr>

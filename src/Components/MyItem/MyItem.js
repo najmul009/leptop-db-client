@@ -45,7 +45,7 @@ const MyItem = () => {
     return (
         <div className='container myitem-section'>
             <h1>my items</h1>
-            <div className="data-table">
+            <div className="data-table table-responsive">
                 <table className="table">
                     <thead>
                         <tr>

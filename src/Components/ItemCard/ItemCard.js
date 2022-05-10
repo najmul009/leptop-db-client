@@ -13,7 +13,7 @@ const ItemCard = ({ item}) => {
         <div className='col-lg-4'>
             <CardGroup className='shadow p-1 mb-5 bg-body rounded'>
                 <Card>
-                    <div>
+                    <div className='text-center'>
                         <Card.Img variant="white img-fluid" src={img} />
                     </div>
                     <Card.Body>

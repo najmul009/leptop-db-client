@@ -1,7 +1,11 @@
-.pageError{
-    height: 100vh;
-    margin-top: 3%;
+.pageError{   
+    margin-top: -150px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:760px) {
+    .pageError{
+        margin-top: 80px;
+    }
 }
