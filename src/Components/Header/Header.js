@@ -17,7 +17,7 @@ const Header = () => {
             <div>
             <nav className="navbar navbar-expand-lg navbar-light bg fixed-top shadow">
                 <div className="container-fluid">
-                    <div className='navbar-margin d-flex justify-content-center align-items-center'>
+                    <div  className='navbar-margin d-flex justify-content-center align-items-center'>
                         <img className='logo' width={70} src={logo} alt="" />
                         <p className='fw-bold font-size logo-text'>Leptop<span className='text-success'>DB</span></p>
                     </div>
