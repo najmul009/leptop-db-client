@@ -5,6 +5,23 @@ import './Inventory.css'
 const Inventory = () => {
     const [Items, setItems] = useItems()
     
+    
+    const handleDelete=(id)=>{
+        const proceed=window.confirm('Are You Sure?')
+        if(proceed){
+          const url=`http://localhost:5000/inventory/${id}`
+          fetch(url,{
+            method:'DELETE'
+          })
+          .then(res=>res.json())
+          .then(data=>{
+            console.log(data);
+            const remaining=Items.filter(item=>item._id!==id)
+            setItems(remaining)
+          })
+        }
+      }
+
     return (
         <div className='inventory-section container'>
             <h1 className='text-center my-4'>Manage Items DashBord</h1>
@@ -28,6 +45,7 @@ const Inventory = () => {
                           key={item._id}
                           index={index}
                           item={item}
+                          deleteItem={handleDelete}
                           ></ItemRow>)  
                         }
                         

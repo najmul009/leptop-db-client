@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ItemRow.css'
 
-const ItemRow = ({item,index}) => {
+const ItemRow = ({item,index,deleteItem}) => {
     const {img,name,quantity,supplier,_id} = item
     const [newQuantity, setNewQuantity] = useState(quantity);
 
@@ -48,7 +48,7 @@ const ItemRow = ({item,index}) => {
                                 </button>
                                 </div>
                             </td>
-                            <td className="delete-icon">
+                            <td onClick={()=>deleteItem(_id)} className="delete-icon">
                             <ion-icon name="trash" ></ion-icon>
                             </td>
                         </tr>
