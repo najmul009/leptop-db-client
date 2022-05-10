@@ -8,7 +8,7 @@ const ItemDetails = () => {
     const { inventoryId } = useParams();
     const [Item, setItem] = useState({});
     const [isReload, setReload] = useState(true)
-
+    
     useEffect(() => {
         const url = `http://localhost:5000/inventory/${inventoryId}`;
         fetch(url)

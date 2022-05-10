@@ -1,12 +1,10 @@
 import useItems from '../../Hooks/useItems';
-import CustomLink from '../CoustomLink/CoustomLink';
 import ItemRow from '../ItemRow/ItemRow';
 import './Inventory.css'
 
 const Inventory = () => {
     const [Items, setItems] = useItems()
     
-    const demoUser = Items[0];
     return (
         <div className='inventory-section container'>
             <h1 className='text-center my-4'>Manage Items DashBord</h1>
@@ -25,9 +23,10 @@ const Inventory = () => {
                     </thead>
                     <tbody>
                         {
-                          Items.map(item => 
+                          Items.map((item,index)  => 
                           <ItemRow
                           key={item._id}
+                          index={index}
                           item={item}
                           ></ItemRow>)  
                         }
