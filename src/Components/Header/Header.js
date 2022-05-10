@@ -38,13 +38,13 @@ const Header = () => {
                             <li className="nav-item">
                                 {
                                     user &&
-                                    <CustomLink className='uNone' to='/additem'>AddFruits</CustomLink>
+                                    <CustomLink className='uNone' to='/additem'>AddItem</CustomLink>
                                 }
                             </li>
                             <li className="nav-item">
                                 {
                                     user &&
-                                    <CustomLink className='uNone' to='/myItems'>My Items</CustomLink>
+                                    <CustomLink className='uNone' to='/myitem'>My Items</CustomLink>
                                 }
                             </li>
                         </ul>

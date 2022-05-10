@@ -42,8 +42,8 @@ const AddItem = () => {
     return (
         <div className=' additem-section '>
             <h3 className=' text-success margin-text text-center'>Please!! Add a New  Items</h3>
-            <div className=' d-flex fruits justify-content-center'>
-                <form onSubmit={handleAddFruits} className='fruits-container mt-3 p-3 shadow'>
+            <div className=' d-flex fruits justify-content-center '>
+                <form onSubmit={handleAddFruits} className='fruits-container mt-3   shadow'>
                     <div className='d-flex justify-content-center flex-column line mt-4'>
                         <label className='fw-bold' htmlFor="email">UserEmail*</label><br />
                         <input className='fw-bold text-secondary border-0 p-2 rounded' type="email" value={user?.email} name="email" id="1" required readOnly />
