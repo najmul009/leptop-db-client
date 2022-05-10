@@ -1,0 +1,25 @@
+ion-icon {
+    font-size: 64px;
+    color: red;
+   
+}
+ion-icon:hover{
+    color: red;
+}
+.delete-icon{
+    font-size: 64px;
+    width: 64px;
+    color: red;
+    cursor: pointer;
+
+}
+.ship-btn{
+    background-color: #059e05;
+    padding: 5px 20px;
+    border: none;
+    color: white !important;
+}
+
+.ship-btn:hover{
+    background-color: #ff4f00;
+}

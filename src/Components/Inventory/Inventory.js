@@ -1,5 +1,6 @@
 import useItems from '../../Hooks/useItems';
 import CustomLink from '../CoustomLink/CoustomLink';
+import ItemRow from '../ItemRow/ItemRow';
 import './Inventory.css'
 
 const Inventory = () => {
@@ -23,32 +24,14 @@ const Inventory = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><img width={100} src={demoUser?.img} alt="" /></td>
-                            <td>{demoUser?.name}</td>
-                            <td>{demoUser?.quantity}</td>
-                            <td>{demoUser?.supplier}</td>
-                            <td>
-                                <CustomLink className='uNone login-btn rounded' to='/login'>
-                                    <span className='text-shadow'>Update</span>
-                                </CustomLink>
-                                <div className="mt-3">
-                                <CustomLink className='uNone login-btn rounded' to='/login'>
-                                    <span className='text-shadow'>Update</span>
-                                </CustomLink>
-                                </div>
-                            </td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
+                        {
+                          Items.map(item => 
+                          <ItemRow
+                          key={item._id}
+                          item={item}
+                          ></ItemRow>)  
+                        }
+                        
 
                     </tbody>
                 </table>
