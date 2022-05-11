@@ -25,7 +25,7 @@ const AddItem = () => {
 
         const addItems = { img, name, price, quantity, supplier, description, email };
 
-        fetch('http://localhost:5000/additem', {
+        fetch('https://intense-spire-62370.herokuapp.com/additem', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

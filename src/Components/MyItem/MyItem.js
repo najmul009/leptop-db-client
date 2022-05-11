@@ -13,7 +13,7 @@ const MyItem = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/additem?email=${email}`;
+            const url = `https://intense-spire-62370.herokuapp.com/additem?email=${email}`;
             try {
                 const myData = await axios.get(url);
                 setMyItems(myData.data);
@@ -30,7 +30,7 @@ const MyItem = () => {
     const handleDelete=(id)=>{
         const proceed=window.confirm('Are You Sure?')
         if(proceed){
-          const url=`http://localhost:5000/inventory/${id}`
+          const url=`https://intense-spire-62370.herokuapp.com/inventory/${id}`
           fetch(url,{
             method:'DELETE'
           })

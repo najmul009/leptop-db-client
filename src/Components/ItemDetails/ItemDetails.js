@@ -10,7 +10,7 @@ const ItemDetails = () => {
     const [isReload, setReload] = useState(true)
     
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${inventoryId}`;
+        const url = `https://intense-spire-62370.herokuapp.com/inventory/${inventoryId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -22,7 +22,7 @@ const ItemDetails = () => {
         const quantity = parseInt(e.target.quantity.value) + parseInt(Item.quantity)
         const updateItem = { quantity }
 
-        const url = `http://localhost:5000/inventory/${inventoryId}`;
+        const url = `https://intense-spire-62370.herokuapp.com/inventory/${inventoryId}`;
         await fetch(url, {
             method: 'PUT',
             headers: {

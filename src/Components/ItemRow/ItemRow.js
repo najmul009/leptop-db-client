@@ -14,7 +14,7 @@ const ItemRow = ({item,index,deleteItem}) => {
     const handleDeliver = id => {
         const quantityUpdate = newQuantity
         const updateQuantity = { quantityUpdate }
-        fetch(`http://localhost:5000/inventory/deliver/${id}`, {
+        fetch(`https://intense-spire-62370.herokuapp.com/inventory/deliver/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
