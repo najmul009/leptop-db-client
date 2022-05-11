@@ -4,12 +4,12 @@ import {getAuth} from "firebase/auth"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBr7bEfaKUxmmgiq3bSApOjCxqv-8HtjqY",
-  authDomain: "leptop-db.firebaseapp.com",
-  projectId: "leptop-db",
-  storageBucket: "leptop-db.appspot.com",
-  messagingSenderId: "451773000407",
-  appId: "1:451773000407:web:ecd7f9d2267e64345e5e92"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId, 
 };
 
 // Initialize Firebase

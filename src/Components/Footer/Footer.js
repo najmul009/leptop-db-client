@@ -13,15 +13,15 @@ const Footer = () => {
                         <ul>
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/services'>Manage compo</Link></li>
-                            <li><Link to='/blogs'>QNA</Link></li>
+                            <li><Link to='/blogs'>FAQ</Link></li>
                         </ul>
                     </div>
                     <div className="col-sm-6 col-md-3 compo">
                         <h3 className='ms-3'>About</h3>
                         <ul>
-                            <li><Link to='/about'>Contact</Link></li>
-                            <li><Link to='/about'>Email</Link></li>
-                            <li><Link to='/about'>Address</Link></li>
+                            <li><Link to='/'>Contact</Link></li>
+                            <li><Link to='/'>Email</Link></li>
+                            <li><Link to='/'>Address</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-6 compo text">
